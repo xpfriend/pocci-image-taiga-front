@@ -7,4 +7,4 @@ while ! nc -z taigaback 8001; do
   sleep 1
 done
 
-exec "$@"
+nginx -g 'daemon off;'

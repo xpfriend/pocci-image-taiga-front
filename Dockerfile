@@ -14,5 +14,4 @@ RUN mkdir /taiga \
 COPY ./bin/. /taiga/bin/
 RUN chmod +x /taiga/bin/*
 
-ENTRYPOINT ["/taiga/bin/entrypoint"]
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["/bin/sh", "/taiga/bin/start.sh"]
