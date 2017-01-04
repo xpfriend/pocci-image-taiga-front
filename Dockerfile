@@ -1,4 +1,4 @@
-FROM nginx:1.11.7-alpine
+FROM nginx:1.11.8-alpine
 MAINTAINER ototadana@gmail.com
 
 ENV GIT_VERSION 2.8.3-r0
